@@ -1,0 +1,18 @@
+<h1>Mashable</h1>
+
+<form action="/sort" method="get" accept-charset="utf-8">
+	<select name="">
+		<% @stories.each do |category|%>
+			<option value='<%= category['channel'] %>'><%= category['channel'] %></option>
+		<% end %>
+	</select>
+</form>
+
+<% @stories.each do |story| %>
+	<article class='story'>
+		<img src='<%= story['image'] %>' width="250px" /><br />
+		<a href='<%= story['link'] %>' target="_blank"><%= story['title'] %></a>
+		<p><%= story['excerpt'] %></p>
+		<p>Category = <%= story['channel'] %></p>
+	</article>
+<% end %>
