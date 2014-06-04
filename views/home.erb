@@ -2,8 +2,8 @@
 
 <form action="/sort" method="get" accept-charset="utf-8">
 	<select name="">
-		<% @stories.each do |category|%>
-			<option value='<%= category['channel'] %>'><%= category['channel'] %></option>
+		<% @categories.each do |cat|%>
+			<option value='<%= cat %>'><%= cat %></option>
 		<% end %>
 	</select>
 </form>
