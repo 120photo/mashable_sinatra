@@ -1,0 +1,45 @@
+<!-- layour template start -->
+<!doctype html>
+<html>
+<head>
+	<title><%= @title %></title>
+
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<style type="text/css" media="screen">
+	ul {
+		list-style: none;
+	}
+</style>
+
+<body>
+
+<div class="container">
+	
+<div class="jumbotron">
+	<h1><%= @jumbo %></h1>
+</div>
+
+<header id="header" class="">
+	<ul class="nav nav-tabs">
+		<li><a href="/">Home</a></li>
+		<li><a href="#">#</a></li>
+	</ul>
+</header><!-- /header -->
+
+<!-- layour template end -->
+
+<%= yield %>
+
+<!-- layour template start -->
+</div>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+<!-- layour template end -->
