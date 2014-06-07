@@ -50,14 +50,15 @@ get '/' do
     erb :home
 end
 
+# sorter = []
+# doc['new'].each do |c, s|
+# 	sorter.push(c['channel']  s['title'])
+# end
+
 
 get '/sort/:categories' do
 	sort_array = []
 	@stories = stories
 	@categories = cat.uniq().sort
-	@sorter = []
-	stories.each do |s|
-		sorter.push(s['channel'])
-	end
-	return "here are the #{@sorter}"
+	return "here are the #{cat}"
 end
