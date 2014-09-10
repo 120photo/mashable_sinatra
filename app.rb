@@ -26,6 +26,7 @@ Bonus
 
 require 'sinatra'
 require 'rest_client'
+require 'json'
 
 # creating variable with content of collection
 resp = RestClient.get('http://mashable.com/stories.json?new_per_page=36')
