@@ -29,7 +29,7 @@ require 'rest_client'
 require 'json'
 
 # creating variable with content of collection
-resp = RestClient.get('http://mashable.com/stories.json?new_per_page=36')
+resp = RestClient.get('http://mashable.com/stories.json?new_per_page=60')
 # converting json into somthing Ruby can read
 doc = JSON.parse(resp)
 
