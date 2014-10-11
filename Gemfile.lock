@@ -43,6 +43,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack
   rest_client
   sinatra
   twitter
